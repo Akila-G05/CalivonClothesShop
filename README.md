@@ -121,6 +121,16 @@ src/test/java              # Manual test harnesses
 - Maven 3.x
 - MySQL 8 running on `localhost:3306` with a database named `calivon`
 
+### Database
+
+A full dump with schema and sample data is included at [`database/calivon.sql`](database/calivon.sql). Import it:
+
+```bash
+mysql -u root -p < database/calivon.sql
+```
+
+Default admin login (from sample data): `akila@gmail.com`.
+
 ### Configuration
 
 1. Update DB credentials in `src/main/resources/hibernate.cfg.xml`.
