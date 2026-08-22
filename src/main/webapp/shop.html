@@ -1,0 +1,397 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shop || Clothing</title>
+    <meta name="description" content="Clothing – eCommerce Fashion Template is a clean and elegant design – suitable for selling clothing, fashion, high fashion, men fashion, women fashion, accessories, digital, kids, watches, jewelries, shoes, kids, furniture, sports, tools….. It has a fully responsive width adjusts automatically to any screen size or resolution.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+    <!-- Place favicon.png in the root directory -->
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="assets/css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="assets/css/custom.css">  <link rel="stylesheet" href="assets/css/color/skin-default.css">
+
+
+
+
+    <!-- Modernizr JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper shop">
+       
+        <!-- Start of header area -->
+        <header class="header-area header-wrapper">
+            <header-content></header-content>
+        </header>
+        <!-- End of header area -->
+        
+        <!--breadcumb area start -->
+        <div class="breadcumb-area breadcumb overlay pos-rltv">
+            <div class="bread-main">
+                <div class="bred-hading text-center">
+                    <h5>Shop Page</h5> </div>
+                <ol class="breadcrumb">
+                    <li class="home"><a title="Go to Home Page" href="index.html">Home</a></li>
+                    <li class="active">Shop</li>
+                </ol>
+            </div>
+        </div>
+        <!--breadcumb area end -->
+        
+        <!--shop main area are start-->
+        <div class="shop-main-area grid-view_area ptb-70">
+            <div class="container">
+                <div class="row">
+                    <!--main-shop-product start-->
+                    <div class="col-lg-9 col-md-8 order-lg-2 order-md-2 order-1">
+                        <div class="shop-wraper">
+                            <div class="col-lg-12">
+                                <div class="shop-area-top">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-9 col-md-9">
+                                            <div class="sort product-show">
+                                                <label>View</label>
+                                                <select id="productPerPageSelect" onchange="sortProducts()">
+                                                    <option value="2">2</option>
+                                                    <option value="10">10</option>
+                                                    <option value="15" selected>15</option>
+                                                    <option value="20">20</option>
+                                                    <option value="25">25</option>
+                                                </select>
+                                            </div>
+                                            <div class="sort product-type">
+                                                <label>Sort By</label>
+                                                <select id="input-sort-select" onchange="sortProducts()">
+                                                    <option value="5" selected>Default</option>
+                                                    <option value="2">Name (A - Z)</option>
+                                                    <option value="3">Name (Z - A)</option>
+                                                    <option value="4">Old Products</option>
+                                                    <option value="5">Latest Products</option>
+                                                    <option value="6">Price (Low &gt; High)</option>
+                                                    <option value="7">Price (High &gt; Low)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div class="list-grid-view text-center">
+                                                <ul class="nav" role="tablist">
+<!--                                                    <li role="presentation"><a class="active" href="#grid" aria-controls="grid"-->
+<!--                                                            role="tab" data-bs-toggle="tab"><i class="zmdi zmdi-widgets"></i></a>-->
+<!--                                                    </li>-->
+<!--                                                    <li role="presentation"><a href="#list" aria-controls="list" role="tab"-->
+<!--                                                            data-bs-toggle="tab"><i class="zmdi zmdi-view-list-alt"></i></a></li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 d-lg-none d-xl-block d-none">
+                                            <div class="total-showing text-end">
+                                                Showing Total Result <span id="resultCount">10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12">
+                                <div class="shop-total-product-area clearfix mt-35">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <!--tab grid are start-->
+                                        <div role="tabpanel" class="tab-pane fade show active" id="grid">
+                                            <div class="total-shop-product-grid row" id="shopProductsContainer">
+
+                                            </div>
+                                        </div>
+                                        <!--shop grid are end-->
+        
+                                        <!--pagination start-->
+                                        <div class="col-lg-12">
+                                            <div class="pagination-btn text-center">
+                                                <ul class="page-numbers">
+                                                    <li><a href="#" class="next page-numbers"><i
+                                                                class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                                    <li><span class="page-numbers current">1</span></li>
+                                                    <li><a href="#" class="page-numbers">2</a></li>
+                                                    <li><a href="#" class="page-numbers">3</a></li>
+                                                    <li><a href="#" class="next page-numbers"><i
+                                                                class="zmdi zmdi-long-arrow-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--pagination end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--main-shop-product start-->
+        
+                    <!--shop sidebar start-->
+                    <div class="col-lg-3 col-md-4 order-lg-1 order-md-1 order-2">
+                        <div class="shop-sidebar">
+                            <!--single aside start-->
+                            <aside class="single-aside search-aside search-box">
+                                <div class="input-box">
+                                    <input class="single-input" placeholder="Search...." type="text" id="shopSearchField">
+                                    <button class="src-btn sb-2" onclick="sortProducts()"><i class="fa fa-search"></i></button>
+                                </div>
+                            </aside>
+                            <!--single aside end-->
+
+                            <!--single aside start-->
+                            <aside class="single-aside tag-aside mt-1">
+                                <ul class="tag-filter mt-30" id="sortedFilterItemsContainers">
+                                </ul>
+                            </aside>
+                            <!--single aside end-->
+        
+                            <!--single aside start-->
+                            <aside class="single-aside catagories-aside">
+                                <div class="heading-title aside-title pos-rltv">
+                                    <h5 class="uppercase">categories</h5>
+                                </div>
+                                <div id="cat-treeview" class="product-cat">
+                                    <ul id="categoryTree">
+
+                                    </ul>
+                                </div>
+                            </aside>
+                            <!--single aside end-->
+        
+                            <!--single aside start-->
+                            <aside class="single-aside price-aside fix">
+                                <div class="heading-title aside-title pos-rltv">
+                                    <h5 class="uppercase">price</h5>
+                                </div>
+                                <div class="price_filter">
+                                    <div id="slider-range"></div>
+                                    <div class="price_slider_amount d-flex">
+                                        <input type="submit" value="Filter" onclick="sortProducts()"/>
+                                        <input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                                    </div>
+                                </div>
+                            </aside>
+                            <!--single aside end-->
+        
+                            <!--single aside start-->
+                            <aside class="single-aside color-aside">
+                                <div class="heading-title aside-title pos-rltv">
+                                    <h5 class="uppercase">Color</h5>
+                                </div>
+                                <ul class="color-filter mt-30" id="colorContainer">
+                                    <li class="border border-2 border-dark"><a href="#" style="background-color: white;"></a></li>
+                                    <li class="border border-2 border-dark"><a href="#" style="background-color: white;"></a></li>
+                                    <li class="border border-2 border-dark"><a href="#" style="background-color: white;"></a></li>
+                                    <li class="border border-2 border-dark"><a href="#" style="background-color: white;"></a></li>
+                                    <li class="border border-2 border-dark"><a href="#" style="background-color: white;"></a></li>
+                                </ul>
+                            </aside>
+                            <!--single aside end-->
+        
+                            <!--single aside start-->
+                            <aside class="single-aside size-aside">
+                                <div class="heading-title aside-title pos-rltv">
+                                    <h5 class="uppercase">Size Option</h5>
+                                </div>
+                                <ul class="size-filter mt-30" id="sizeContainer">
+
+                                </ul>
+                                <ul class="size-filter mt-10" id="sizeContainer2">
+                                </ul>
+                            </aside>
+
+                            <!--single aside start-->
+                            <aside class="single-aside tag-aside">
+                                <div class="heading-title aside-title pos-rltv">
+                                    <h5 class="uppercase">Brands</h5>
+                                </div>
+                                <ul class="tag-filter mt-30" id="brandContainer">
+                                </ul>
+                            </aside>
+                            <!--single aside end-->
+        
+                            <!--single aside start-->
+                            <aside class="single-aside add-aside">
+                                <a href="single-product.html"><img src="assets/images/banner/add.jpg" alt=""></a>
+                            </aside>
+                            <!--single aside end-->
+                        </div>
+                    </div>
+                    <!--shop sidebar end-->
+                </div>
+            </div>
+        </div>
+        <!--shop main area are end-->
+
+        <footer>
+            <footer-content></footer-content>
+        </footer>
+        
+
+
+        <!-- QUICKVIEW PRODUCT -->
+        <div id="quickview-wrapper">
+            <!-- Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-product">
+                              <div class="product-images"> 
+                                   <!--modal tab start-->
+                                    <div class="portfolio-thumbnil-area-2">
+                                        <div class="tab-content active-portfolio-area-2">
+                                            <div role="tabpanel" class="tab-pane active" id="view1">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/product/01.jpg" alt="Single portfolio" /></a>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="view2">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/product/02.jpg" alt="Single portfolio" /></a>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="view3">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/product/03.jpg" alt="Single portfolio" /></a>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="view4">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/product/04.jpg" alt="Single portfolio" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-more-views-2">
+                                            <div class="thumbnail-carousel-modal-2 nav" data-tabs="tabs">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" id="view1" data-bs-toggle="tab" href="#view1"
+                                                        role="tab" aria-controls="view1" aria-selected="true">
+                                                        <img
+                                                        src="assets/images/product/01.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="view2" data-bs-toggle="tab" href="#view2"
+                                                        role="tab" aria-controls="view2" aria-selected="true">
+                                                        <img
+                                                        src="assets/images/product/02.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="view3" data-bs-toggle="tab" href="#view3"
+                                                        role="tab" aria-controls="view3" aria-selected="true">
+                                                        <img
+                                                        src="assets/images/product/03.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="view4" data-bs-toggle="tab" href="#view4"
+                                                        role="tab" aria-controls="view4" aria-selected="true">
+                                                        <img
+                                                        src="assets/images/product/04.jpg" alt="" />
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <!--modal tab end-->
+                                    <!-- .product-images -->
+                                    <div class="product-info">
+                                        <h1>Aenean eu tristique</h1>
+                                        <div class="price-box-3">
+                                            <div class="s-price-box"> <span class="new-price">$160.00</span> <span class="old-price">$190.00</span> </div>
+                                        </div> <a href="shop.html" class="see-all">See all features</a>
+                                        <div class="quick-add-to-cart">
+                                            <form method="post" class="cart">
+                                                <div class="numbers-row">
+                                                    <input type="number" id="french-hens" value="3" min="1"> </div>
+                                                <button class="single_add_to_cart_button" type="submit">Add to cart</button>
+                                            </form>
+                                        </div>
+                                        <div class="quick-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.Nam fringilla tristique auctor. </div>
+                                        <div class="social-sharing-modal">
+                                            <div class="widget widget_socialsharing_widget">
+                                                <h3 class="widget-title-modal">Share this product</h3>
+                                                <ul class="social-icons-modal">
+                                                    <li><a  title="Facebook" href="#" class="facebook m-single-icon"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a  title="Twitter" href="#" class="twitter m-single-icon"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a  title="Pinterest" href="#" class="pinterest m-single-icon"><i class="fa fa-pinterest"></i></a></li>
+                                                    <li><a  title="Google +" href="#" class="gplus m-single-icon"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a  title="LinkedIn" href="#" class="linkedin m-single-icon"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- .product-info -->
+                                </div>
+                                <!-- .modal-product -->
+                            </div>
+                            <!-- .modal-body -->
+                        </div>
+                        <!-- .modal-content -->
+                    </div>
+                    <!-- .modal-dialog -->
+                </div>
+                <!-- END Modal -->
+            </div>
+        <!-- END QUICKVIEW PRODUCT -->
+        
+    </div> 
+    <!-- Body main wrapper end -->
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!-- Notiflix -->
+    <script src="assets/js/notiflix-aio-3.2.8.min.js"></script>
+    <script src="assets/js/notifix-Init.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/webjs/product-card.js"></script>
+    <script src="assets/js/webjs/header.js"></script>
+    <script src="assets/js/webjs/footer.js"></script>
+    <script src="assets/js/webjs/shop.js"></script>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slider js -->
+    <script src="assets/js/slider/jquery.nivo.slider.pack.js"></script>
+    <script src="assets/js/slider/nivo-active.js"></script>
+    <!-- counterUp-->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

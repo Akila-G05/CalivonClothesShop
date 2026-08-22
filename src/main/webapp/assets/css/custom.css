@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------
+
+Template: Theme Name
+Author: 
+Version:  1
+Design and Developed by: 
+
+Note: This is the file where you can add your custom styles to change the look of the theme. But don't modify "style.css" file.
+
+---------------------------------------------------------------*/
+
+/* ----------------------------------------------------
+	You can put your custom css code here: 
+-------------------------------------------------------*/
+.notiflix-notify-content {
+    all: unset !important;
+    display: block !important;
+    color: #fff !important;
+    font-size: 16px !important;
+}
+
+.notiflix-notify-body {
+    all: unset !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 12px 20px !important;
+    background: #cc3333 !important;
+    border-radius: 4px !important;
+}
+
+.notiflix-loading,
+.notiflix-overlay {
+    z-index: 99999 !important;
+}
+
+.table-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+    display: block;
+}
+
+.table-scroll table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-scroll thead th {
+    position: sticky;
+    top: 0;
+    background: #fff; /* keep head visible */
+    z-index: 2;
+}
+
+/*my-account.html page order history part css*/
+.cancelBtn:hover {
+    background-color: #303030 !important;   /* new bg */
+    color: white !important;           /* new text */
+    border-color: #303030 !important;        /* new border */
+}
+
+.cancelBtn:hover i {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .prodcut-text-list .bg-white {
+        align-self: center !important;
+    }
+
+    .primary-image {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* Center product card */
+    .single-product-list {
+        text-align: center;
+    }
+
+    /* Center text section */
+    .prodcut-text-list {
+        align-items: center;
+    }
+
+    /* Center product name */
+    .prodcut-name {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Center rating & price */
+    .prodcut-ratting-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Center product details (Brand, Color, Size) */
+    .list-product-content > div {
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    /* Center action buttons */
+    .social-icon-wraper ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icon-wraper ul li {
+        margin: 5px;
+    }
+
+    /* Center PENDING badge container */
+    .prodcut-text-list .mt-4 {
+        align-items: center;
+    }
+
+}
+
+
+/* Active (opened) accordion header */
+.accordion-button:not(.collapsed) {
+    background-color: #303030;   /* your color */
+    color: #ffffff;
+}
+
+/* Arrow (icon) color */
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:focus {
+    box-shadow: none;            /* remove blue glow */
+    border-color: #303030;
+}
+
+.accordion-button:hover {
+    background-color: #404040;
+    color: #f1f1f1;
+}
+
+
+/*//Admin Pannel*/
+.stat-card {
+    border-radius: 14px;
+    height: 90px;
+}
+
+.stat-icon {
+    position: absolute;
+    top: -18px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(40, 167, 69, 0.25); /* border touch */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(40, 167, 69, 0.08); /* faded bg */
+}
+
+.stat-icon i {
+    color: #28a745;
+    font-size: 25px;
+    opacity: 1; /* faded icon */
+}
+
+
+/*--------------------------------------------------------------------------------*/

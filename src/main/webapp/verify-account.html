@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Verify Account || Calivon</title>
+  <meta name="description" content="Clothing – eCommerce Fashion Template is a clean and elegant design – suitable for selling clothing, fashion, high fashion, men fashion, women fashion, accessories, digital, kids, watches, jewelries, shoes, kids, furniture, sports, tools….. It has a fully responsive width adjusts automatically to any screen size or resolution.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+  <!-- Place favicon.png in the root directory -->
+
+  <!-- All css files are included here. -->
+  <!-- Bootstrap fremwork main css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- This core.css file contents all plugings css file. -->
+  <link rel="stylesheet" href="assets/css/core.css">
+  <!-- Theme shortcodes/elements style -->
+  <link rel="stylesheet" href="assets/css/shortcode/shortcodes.css">
+  <!-- Theme main style -->
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Responsive css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- User style -->
+  <link rel="stylesheet" href="assets/css/custom.css">  <link rel="stylesheet" href="assets/css/color/skin-default.css">
+
+  <style>
+    /* Move modal to top of viewport */
+    .modal-top {
+      display: flex;
+      align-items: flex-start;  /* top alignment */
+      justify-content: center;  /* horizontal centering */
+      min-height: 100vh;        /* ensure modal covers full height for proper backdrop */
+    }
+
+    .modal-top .modal-content {
+      margin-top: 20px;  /* adjust distance from top */
+    }
+  </style>
+
+  <!-- Modernizr JS -->
+  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+</head>
+
+<body>
+<!-- Body main wrapper start -->
+<div class="wrapper login vh-100 d-flex align-items-center" style="background-color: #F1F1F1;">
+
+  <!--branding-section-area start-->
+  <div class="branding-section-area col-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="">
+            <div class="row">
+              <div class="col-xl-7 col-lg-6 col-md-6 d-none d-lg-block">
+                <div class="brand-img text-center">
+                  <img src="assets/images/team/branding.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-6 col-md-6 d-flex align-items-center">
+                <div class="brand-content">
+                  <div class="brand-text color-lightgrey">
+                    <h6>Already have account? <a href="login.html" class="text-danger">Signin Here</a></h6>
+                    <h3 class="uppercase montserrat">Verify Your Account</h3>
+                    <div class="col-md-12 lr2">
+                      <form action="#">
+                        <div class="login-reg">
+                          <div class="col-12 input-box mb-10">
+                            <label class="control-label color-lightgrey">Verification Code</label>
+                            <input type="email" class="info color-lightgrey" placeholder="Verification Code" value="" id="verificationCode">
+                          </div>
+                        </div>
+                        <div class="frm-action">
+                          <div class="input-box tci-box" style="cursor: pointer">
+                            <a onclick="verifyAccount()" class="btn-def btn2">Verify</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="brand-timer shadow-box-2 mt-50">
+                    <div class="timer-wraper ">
+                      <h4 class="uppercase montserrat text-start">Important:</h4>
+                      <div class="timer">
+                        <h6 class="montserrat text-start">Please verify your email to secure your account and unlock all features. Click the button below to complete the process.</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--branding-section-area end-->
+
+  <!-- VERIFY USER MODEL -->
+  <div id="quickview-wrapper2">
+    <!-- Modal -->
+    <div class="productModal modal fade" id="verifyModal" tabindex="-2" role="dialog">
+      <div class="modal-dialog" role="document" style="margin-top: 20px; top: 0; padding: 0;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body"  style="padding: 20px;">
+            <div class="row">
+              <h3>Please set password to verify your guest account.</h3>
+              <div class="col-12 mt-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-box mb-20">
+                      <label>New Password<em>*</em></label>
+                      <input type="password" id="newPassword" class="info" placeholder="New Password" >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-box mb-20">
+                      <label>Confirm New Password<em>*</em></label>
+                      <input type="password" id="confirmPassword" class="info" placeholder="Confirm New Password" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-4 text-end">
+                <a class="btn-def btn2" href="javascript:void(0)" onclick="verifyGuestAccount()">Save</a>
+              </div>
+            </div>
+          </div>
+          <!-- .modal-body -->
+        </div>
+        <!-- .modal-content -->
+      </div>
+      <!-- .modal-dialog -->
+    </div>
+    <!-- END Modal -->
+  </div>
+  <!-- END VERIFY USER MODEL -->
+
+</div>
+<!-- Body main wrapper end -->
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="assets/js/webjs/verify-account.js"></script>
+<script src="assets/js/notiflix-aio-3.2.8.min.js"></script>
+<script src="assets/js/notifix-Init.js"></script>
+
+<!-- jquery latest version -->
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<!-- Bootstrap framework js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- Slider js -->
+<script src="assets/js/slider/jquery.nivo.slider.pack.js"></script>
+<script src="assets/js/slider/nivo-active.js"></script>
+<!-- counterUp-->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- All js plugins included in this file. -->
+<script src="assets/js/plugins.js"></script>
+<!-- Main js file that contents all jQuery plugins activation. -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

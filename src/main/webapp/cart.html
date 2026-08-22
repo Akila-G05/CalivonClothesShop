@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cart || Clothing</title>
+    <meta name="description" content="Clothing – eCommerce Fashion Template is a clean and elegant design – suitable for selling clothing, fashion, high fashion, men fashion, women fashion, accessories, digital, kids, watches, jewelries, shoes, kids, furniture, sports, tools….. It has a fully responsive width adjusts automatically to any screen size or resolution.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+    <!-- Place favicon.png in the root directory -->
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="assets/css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/color/skin-default.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper cart">
+
+        <!-- Start of header area -->
+        <header class="header-area header-wrapper">
+            <header-content></header-content>
+        </header>
+        <!-- End of header area -->
+
+        <!--breadcumb area start -->
+        <div class="breadcumb-area breadcumb-3 overlay pos-rltv">
+            <div class="bread-main">
+                <div class="bred-hading text-center">
+                    <h5>Cart Details</h5>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="home"><a title="Go to Home Page" href="index.html">Home</a></li>
+                    <li class="active">Cart</li>
+                </ol>
+            </div>
+        </div>
+        <!--breadcumb area end -->
+
+        <!--cart-checkout-area start -->
+        <div class="cart-checkout-area  pt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product-area">
+                            <div class="clearfix"></div>
+                            <div class="content-tab-product-category pb-70">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade show active" id="cart">
+                                        <!-- cart are start-->
+                                        <div class="cart-page-area">
+                                            <div class="table-responsive mb-20">
+                                                <table class="shop_table-2 cart table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="product-thumbnail ">Image</th>
+                                                            <th class="product-name ">Product Name</th>
+                                                            <th class="product-subtotal">Type</th>
+                                                            <th class="product-price ">Unit Price</th>
+                                                            <th class="product-quantity">Quantity</th>
+                                                            <th class="product-subtotal ">Total</th>
+                                                            <th class="product-remove">Remove</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="cartProductTableBody">
+<!--                                                            <tr class="cart_item">-->
+<!--                                                                <td class="item-img">-->
+<!--                                                                    <a href="#"><img src="assets/images/product/01.jpg" alt=""></a>-->
+<!--                                                                </td>-->
+<!--                                                                <td class="item-title"> <a href="#">Fusce Laoreet Volutpat </a></td>-->
+<!--                                                                <td class="">-->
+<!--                                                                    <div style="display: flex; align-items: center; justify-content: center">-->
+<!--                                                                        <div style="width: 20px; height: 20px; background-color:#0c1923; border: 1px solid #ccc;"></div>&nbsp; &nbsp;XLL-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
+<!--                                                                <td class="item-price"> Rs. 13000.00 </td>-->
+<!--                                                                <td class="item-qty">-->
+<!--                                                                    <div class="cart-quantity">-->
+<!--                                                                        <div class="product-qty">-->
+<!--                                                                            <div class="cart-quantity">-->
+<!--                                                                                <div class="cart-plus-minus">-->
+<!--                                                                                    <div class="dec qtybutton">-</div>-->
+<!--                                                                                    <input value="1" name="qtybutton" class="cart-plus-minus-box" type="number">-->
+<!--                                                                                    <div class="inc qtybutton">+</div>-->
+<!--                                                                                </div>-->
+<!--                                                                            </div>-->
+<!--                                                                        </div>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
+<!--                                                                <td class="total-price"><strong> Rs. 130000.00</strong></td>-->
+<!--                                                                <td class="remove-item"><a href="#"><i class="fa fa-trash-o"></i></a></td>-->
+<!--                                                            </tr>-->
+                                                    </tbody>
+                                                </table>
+                                                <div id="emptyDesignContainer">
+                                                    <div class="col-12 border border-3 text-center p-5 border-top-0" >
+                                                        <div class="row">
+                                                            <h1>Your Cart Is Empty!</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cart-bottom-area">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 col-md-7">
+                                                            <div class="update-coupne-area">
+                                                                <div class="update-continue-btn text-end pb-20" id="cardBtnContainer">
+<!--                                                                    <a href="javascript:void(0)" class="btn-def btn2" id="updateCartBtn">Update Cart</a>-->
+<!--                                                                    <a href="shop.html" class="btn-def btn2">Continue Shopping</a>-->
+                                                                </div>
+<!--                                                                <div class="coupn-area">-->
+<!--                                                                    <div class="catagory-title cat-tit-5 mb-20">-->
+<!--                                                                        <h3>Coupon</h3>-->
+<!--                                                                        <p>Enter your coupon code if you have one.-->
+<!--                                                                        </p>-->
+<!--                                                                    </div>-->
+<!--                                                                    <div class="input-box input-box-2 mb-20">-->
+<!--                                                                        <input type="text" placeholder="Coupn"-->
+<!--                                                                            class="info" name="subject">-->
+<!--                                                                    </div>-->
+<!--                                                                    <a href="#" class="btn-def btn2">Apply Coupn</a>-->
+<!--                                                                </div>-->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-5">
+                                                            <div class="cart-total-area">
+                                                                <div
+                                                                    class="catagory-title cat-tit-5 mb-20 text-end">
+                                                                    <h3>Cart Totals</h3>
+                                                                </div>
+                                                                <div class="sub-shipping">
+                                                                    <p>Subtotal <span id="subTotal">Rs. 0.00</span></p>
+                                                                    <p>Shipping <span id="shipping">Rs. 0.00</span></p>
+                                                                </div>
+                                                                <div class="shipping-method text-end">
+                                                                    <p><a href="#">Calculate Shipping</a></p>
+                                                                </div>
+                                                                <div class="process-cart-total">
+                                                                    <p>Total <span id="total">Rs. 0.00</span></p>
+                                                                </div>
+                                                                <div class="process-checkout-btn text-end">
+                                                                    <a class="btn-def btn2" href="javascript:void(0)" onclick="openUserCheckoutModal()">Process To
+                                                                        Checkout</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <!-- cart are end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cart-checkout-area end-->
+
+        <!-- USER CHECKOUT MODAL -->
+        <div id="quickview-wrapper">
+            <!-- Modal -->
+            <div class="productModal modal fade" id="cartUserCheckoutModal" tabindex="-2" role="dialog" >
+                <div class="modal-dialog  " role="document"  style="margin-top: 0; top: 0; padding: 0;">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body" style="padding: 20px;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="checkout-payment-area" style="padding: 20px;">
+                                        <div class="checkout-total mt20" id="printableOrderArea">
+                                            <div class="col-12">
+                                                <div class="row pt-3 pl-10 text-white  print-title-div"  style="background-color: #303030">
+                                                    <h3 class="print-title">Your Order
+<!--                                                        <a href="javascript:void(0)" onclick="printOrder();" style="font-size: 15px;">Print <i class="fa fa-print"></i></a>-->
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <form action="#" method="post">
+                                                <div class="table-responsive">
+                                                    <table class="checkout-area table">
+                                                        <thead>
+                                                            <tr class="cart_item">
+                                                                <td class="ctg-type"> Product</td>
+                                                                <td class="cgt-des"> Total</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="userOrderTableBody">
+<!--                                                            <tr class="cart_item check-item prd-name">-->
+<!--                                                                <td class="ctg-type"> Aenean sagittis (Black / M) ×-->
+<!--                                                                    <span>1</span></td>-->
+<!--                                                                <td class="cgt-des"> Rs. 1,026.00</td>-->
+<!--                                                            </tr>-->
+<!--                                                            <tr class="cart_item check-item prd-name">-->
+<!--                                                                <td class="ctg-type"> Aenean sagittis (Red / XL) ×-->
+<!--                                                                    <span>1</span></td>-->
+<!--                                                                <td class="cgt-des">Rs. 1,026.00</td>-->
+<!--                                                            </tr>-->
+<!--                                                            <tr class="cart_item">-->
+<!--                                                                <td class="ctg-type"> Subtotal</td>-->
+<!--                                                                <td class="cgt-des">Rs. 2,052.00</td>-->
+<!--                                                            </tr>-->
+<!--                                                            <tr class="cart_item">-->
+<!--                                                                <td class="ctg-type"> Shipping</td>-->
+<!--                                                                <td class="cgt-des">Rs. 2,052.00</td>-->
+<!--                                                            </tr>-->
+<!--                                                            <tr class="cart_item">-->
+<!--                                                            <td class="ctg-type crt-total"> Total-->
+<!--                                                            </td>-->
+<!--                                                            <td class="cgt-des prc-total"> $-->
+<!--                                                                2,055.00-->
+<!--                                                            </td>-->
+<!--                                                        </tr>-->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="payment-section mt-20 clearfix">
+                                            <div class="pay-toggle">
+                                                <div class="pay-type-total">
+                                                    <div class="pay-type">
+                                                        <input type="radio" id="pay-toggle03" name="pay" value="cod" checked>
+                                                        <label for="pay-toggle03">Cash on Delivery</label>
+                                                    </div>
+                                                    <div class="pay-type">
+                                                        <input type="radio" id="pay-toggle04" name="pay" value="card">
+                                                        <label for="pay-toggle04">Card Payment</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-box mt-20 text-center">
+                                                    <a class="btn-def btn2" href="javascript:void(0)" onclick="checkOutUserOrder()">Place order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .modal-body -->
+                    </div>
+                    <!-- .modal-content -->
+                </div>
+                <!-- .modal-dialog -->
+            </div>
+            <!-- END Modal -->
+        </div>
+        <!-- USER CHECKOUT MODAL -->
+
+        <footer>
+            <footer-content></footer-content>
+        </footer>
+
+    </div>
+    <!-- Body main wrapper end -->
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+<!--    <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>-->
+
+    <!-- Notiflix -->
+    <script src="assets/js/notiflix-aio-3.2.8.min.js"></script>
+    <script src="assets/js/notifix-Init.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
+    <script src="assets/js/webjs/header.js"></script>
+    <script src="assets/js/webjs/footer.js"></script>
+    <script src="assets/js/webjs/cart.js"></script>
+    <script src="assets/js/webjs/checkout.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slider js -->
+    <script src="assets/js/slider/jquery.nivo.slider.pack.js"></script>
+    <script src="assets/js/slider/nivo-active.js"></script>
+    <!-- counterUp-->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

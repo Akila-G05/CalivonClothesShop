@@ -1,0 +1,1189 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admin Account || Clothing</title>
+    <meta name="description" content="Clothing – eCommerce Fashion Template is a clean and elegant design – suitable for selling clothing, fashion, high fashion, men fashion, women fashion, accessories, digital, kids, watches, jewelries, shoes, kids, furniture, sports, tools….. It has a fully responsive width adjusts automatically to any screen size or resolution.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icons/favicon.png">
+    <!-- Place favicon.png in the root directory -->
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="assets/css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/color/skin-default.css">
+
+    <!-- Modernizr JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <link rel="stylesheet" href="assets/richtexteditor/rte_theme_default.css" />
+    <script type="text/javascript" src="assets/richtexteditor/rte.js"></script>
+    <script type="text/javascript" src='assets/richtexteditor/plugins/all_plugins.js'></script>
+
+</head>
+
+<body>
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper my-account">
+
+        <!-- Start of header area -->
+        <header class="header-area header-wrapper">
+            <header-content></header-content>
+        </header>
+        <!-- End of header area -->
+
+        <!--breadcumb area start -->
+        <div class="breadcumb-area overlay pos-rltv">
+            <div class="bread-main">
+                <div class="bred-hading text-center">
+                    <h5>Admin Account</h5>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="home"><a title="Go to Home Page" href="index.html">Home</a></li>
+                    <li class="active">Account</li>
+                </ol>
+            </div>
+        </div>
+        <!--breadcumb area end -->
+
+        <!--service idea area are start -->
+        <div class="idea-area  ptb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="idea-tab-menu">
+                            <ul class="nav idea-tab" role="tablist">
+                                <li role="presentation"><a class="active" href="#admin_pannel" aria-controls="admin_pannel" id="admin_panel_anchor"
+                                        role="tab" data-bs-toggle="tab">Admin Panel</a></li>
+                                <li role="presentation"><a href="#manage_users" aria-controls="manage_users" role="tab" id="manage_users_anchor"
+                                        data-bs-toggle="tab">Manage Users</a></li>
+                                <li role="presentation"><a href="#add_product" aria-controls="add_product" role="tab" id="add_product_anchor"
+                                        data-bs-toggle="tab">Add New Product</a></li>
+                                <li role="presentation"><a href="#manage_product" aria-controls="manage_product" role="tab" id="manage_product_anchor"
+                                        data-bs-toggle="tab">Manage Products</a></li>
+                                <li role="presentation"><a href="#manage_orders" aria-controls="manage_orders" role="tab" id="manage_orders_anchor"
+                                        data-bs-toggle="tab">Manage Orders</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="idea-tab-content">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="admin_pannel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row g-3 mb-2">
+                                                <div class="col-lg-3 col-md-6 mb-4">
+                                                    <div class="card stat-card shadow-lg border-0 position-relative">
+                                                        <!-- Icon on Border -->
+                                                        <div class="stat-icon">
+                                                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                        </div>
+
+                                                        <!-- Content -->
+                                                        <div class="pt-3 px-3 pb-3">
+                                                            <div class="text-muted" style="font-size: small">Total Revenue</div>
+                                                            <h4 class="fw-bold text-success" id="totalRevenue">Rs. 0,000</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 mb-4">
+                                                    <div class="card stat-card shadow-lg border-0 position-relative">
+                                                        <!-- Icon on Border -->
+                                                        <div class="stat-icon" >
+                                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                                        </div>
+
+                                                        <!-- Content -->
+                                                        <div class="pt-3 px-3 pb-3">
+                                                            <div class="text-muted" style="font-size: small">Products</div>
+                                                            <h4 class="fw-bold text-dark" id="productsCount">00</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 mb-4">
+                                                    <div class="card stat-card shadow-lg border-0 position-relative">
+                                                        <!-- Icon on Border -->
+                                                        <div class="stat-icon">
+                                                            <i class="fa fa-users" aria-hidden="true" ></i>
+                                                        </div>
+
+                                                        <!-- Content -->
+                                                        <div class="pt-3 px-3 pb-3">
+                                                            <div class="text-muted" style="font-size: small">Users</div>
+                                                            <h4 class="fw-bold text-dark" id="usersCount">00</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 mb-4">
+                                                    <div class="card stat-card shadow-lg border-0 position-relative">
+                                                        <!-- Icon on Border -->
+                                                        <div class="stat-icon" >
+                                                            <i class="fa fa-cubes" aria-hidden="true"></i>
+                                                        </div>
+
+                                                        <!-- Content -->
+                                                        <div class="pt-3 px-3 pb-3">
+                                                            <div class="text-muted" style="font-size: small">Orders</div>
+                                                            <h4 class="fw-bold text-dark" id="ordersCount">00</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="card shadow-sm border-0 mb-4">
+                                                        <div class="card-body">
+                                                            <h5 class="fw-bold mb-3">Sales Overview</h5>
+                                                            <canvas id="salesChart" height="120"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="card shadow-sm border-0 ">
+                                                                <div class="card-body">
+                                                                    <h5 class="fw-bold mb-3">🔥 Most Selling Products</h5>
+
+                                                                    <table class="table table-sm align-middle">
+                                                                        <thead class="text-muted">
+                                                                            <tr>
+                                                                                <th>#</th>
+                                                                                <th>Product</th>
+                                                                                <th>Sold</th>
+                                                                                <th>Revenue</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="mostSellingProductTableBody">
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>.................</td>
+                                                                                <td>00</td>
+                                                                                <td class="text-success">Rs. 0,000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2</td>
+                                                                                <td>.................</td>
+                                                                                <td>00</td>
+                                                                                <td class="text-success">Rs. 0,000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>3</td>
+                                                                                <td>.................</td>
+                                                                                <td>00</td>
+                                                                                <td class="text-success">Rs. 0,000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>4</td>
+                                                                                <td>.................</td>
+                                                                                <td>00</td>
+                                                                                <td class="text-success">Rs. 0,000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>5</td>
+                                                                                <td>.................</td>
+                                                                                <td>00</td>
+                                                                                <td class="text-success">Rs. 0,000</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="card shadow-sm border-0 h-100">
+                                                                <div class="card-body">
+                                                                    <h5 class="fw-bold mb-3">🚨 Low Stock Products</h5>
+
+                                                                    <table class="table table-sm align-middle">
+                                                                        <thead class="text-muted">
+                                                                            <tr>
+                                                                                <th>#</th>
+                                                                                <th>Product</th>
+                                                                                <th>Color</th>
+                                                                                <th>Size</th>
+                                                                                <th>Available</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody id="lowStockTableBody">
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>.................</td>
+                                                                                <td>
+                                                                                    <div style="display:flex;align-items:center;justify-content:center">
+                                                                                        <div style="width:20px;height:20px;
+                                                                                                    background-color:white;
+                                                                                                    border:1px solid #ccc;"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>...</td>
+                                                                                <td>00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2</td>
+                                                                                <td>.................</td>
+                                                                                <td>
+                                                                                    <div style="display:flex;align-items:center;justify-content:center">
+                                                                                        <div style="width:20px;height:20px;
+                                                                                                    background-color:white;
+                                                                                                    border:1px solid #ccc;"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>...</td>
+                                                                                <td>00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>3</td>
+                                                                                <td>.................</td>
+                                                                                <td>
+                                                                                    <div style="display:flex;align-items:center;justify-content:center">
+                                                                                        <div style="width:20px;height:20px;
+                                                                                                    background-color:white;
+                                                                                                    border:1px solid #ccc;"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>...</td>
+                                                                                <td>00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>4</td>
+                                                                                <td>.................</td>
+                                                                                <td>
+                                                                                    <div style="display:flex;align-items:center;justify-content:center">
+                                                                                        <div style="width:20px;height:20px;
+                                                                                                    background-color:white;
+                                                                                                    border:1px solid #ccc;"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>...</td>
+                                                                                <td>00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>5</td>
+                                                                                <td>.................</td>
+                                                                                <td>
+                                                                                    <div style="display:flex;align-items:center;justify-content:center">
+                                                                                        <div style="width:20px;height:20px;
+                                                                                                    background-color:white;
+                                                                                                    border:1px solid #ccc;"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>...</td>
+                                                                                <td>00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-5" >
+                                                    <div class="card shadow-sm border-0" id="bestSellerProductContainer">
+                                                        <div class="card-body text-center">
+                                                            <h5 class="fw-bold mb-3">Best Seller</h5>
+
+                                                            <!-- Product Info -->
+                                                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                                                <img src="" alt="Laoding"
+                                                                     style="width: 190px; height: 190px; object-fit: cover;">
+                                                            </div>
+
+                                                            <h6 class="fw-bold mb-1">..............................</h6>
+                                                            <span class="text-muted">.........</span>
+
+                                                            <div class="mt-2 fw-semibold text-success">
+                                                                Rs. 0,000
+                                                            </div>
+                                                            <!-- Stats -->
+                                                            <div class="row text-center mb-3">
+                                                                <div class="col-3 mx-auto">
+                                                                    <div class="text-muted small">Sold</div>
+                                                                    <div class="fw-bold fs-5 text-primary">00</div>
+                                                                </div>
+                                                                <div class="col-3 mx-auto">
+                                                                    <div class="text-muted small">In Stock</div>
+                                                                    <div class="fw-bold fs-5 text-success">00</div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-30">
+                                                        <div class="col-lg-6 col-md-6 mb-4">
+                                                            <div class="card stat-card shadow-lg border-0 position-relative">
+                                                                <!-- Icon on Border -->
+                                                                <div class="stat-icon" style="border: 1px solid rgb(191,162,9); background: rgba(251,238,11,0.23);">
+                                                                    <i class="fa fa-cubes text-warning" aria-hidden="true"></i>
+                                                                </div>
+
+                                                                <!-- Content -->
+                                                                <div class="pt-3 px-3 pb-3">
+                                                                    <div class="text-muted" style="font-size: small">Pending Orders</div>
+                                                                    <h4 class="fw-bold text-dark" id="pendingOrdersCount">00</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 mb-4">
+                                                            <div class="card stat-card shadow-lg border-0 position-relative">
+                                                                <!-- Icon on Border -->
+                                                                <div class="stat-icon" style="border: 1px solid rgb(179,0,0); background: rgba(255,22,42,0.23);">
+                                                                    <i class="fa fa-warning text-danger" aria-hidden="true"></i>
+                                                                </div>
+
+                                                                <!-- Content -->
+                                                                <div class="pt-3 px-3 pb-3">
+                                                                    <div class="text-muted" style="font-size: small">Low Stocks</div>
+                                                                    <h4 class="fw-bold text-dark" id="lowStocksCount">00</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6">
+                                                    <div class="card shadow-sm border-0 h-100">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                                <h5 class="fw-bold mb-0">🧾 Recent Orders</h5>
+                                                            </div>
+
+                                                            <ul class="list-group list-group-flush" id="recentOrdersContainer">
+                                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <div class="fw-semibold">#ORD00000000</div>
+                                                                        <small class="text-muted">.............</small>
+                                                                    </div>
+                                                                    <div class="text-end">
+                                                                        <div class="fw-semibold text-success">Rs. 0,000</div>
+                                                                        <span class="badge bg-success">???????</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <div class="fw-semibold">#ORD00000000</div>
+                                                                        <small class="text-muted">.............</small>
+                                                                    </div>
+                                                                    <div class="text-end">
+                                                                        <div class="fw-semibold text-success">Rs. 0,000</div>
+                                                                        <span class="badge bg-success">???????</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <div class="fw-semibold">#ORD00000000</div>
+                                                                        <small class="text-muted">.............</small>
+                                                                    </div>
+                                                                    <div class="text-end">
+                                                                        <div class="fw-semibold text-success">Rs. 0,000</div>
+                                                                        <span class="badge bg-success">???????</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <div class="fw-semibold">#ORD00000000</div>
+                                                                        <small class="text-muted">.............</small>
+                                                                    </div>
+                                                                    <div class="text-end">
+                                                                        <div class="fw-semibold text-success">Rs. 0,000</div>
+                                                                        <span class="badge bg-success">???????</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <div class="fw-semibold">#ORD00000000</div>
+                                                                        <small class="text-muted">.............</small>
+                                                                    </div>
+                                                                    <div class="text-end">
+                                                                        <div class="fw-semibold text-success">Rs. 0,000</div>
+                                                                        <span class="badge bg-success">???????</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="card shadow-sm border-0 h-100">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                                <h5 class="fw-bold mb-0">🏆 Top Customers</h5>
+                                                                <span class="badge bg-light text-dark">This Month</span>
+                                                            </div>
+
+                                                            <table class="table table-sm align-middle mb-0">
+                                                                <thead class="text-muted">
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>Customer</th>
+                                                                        <th class="text-center">Orders</th>
+                                                                        <th class="text-end">Spent</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="topCustomersContainer">
+                                                                    <tr>
+                                                                        <td><span class="badge bg-warning text-dark">1</span></td>
+                                                                        <td>
+                                                                            <div class="fw-semibold">....... ........</div>
+                                                                            <small class="text-muted">.............</small>
+                                                                        </td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-end fw-semibold text-success">
+                                                                            Rs. 0,000
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span class="badge bg-warning text-dark">1</span></td>
+                                                                        <td>
+                                                                            <div class="fw-semibold">....... ........</div>
+                                                                            <small class="text-muted">.............</small>
+                                                                        </td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-end fw-semibold text-success">
+                                                                            Rs. 0,000
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span class="badge bg-warning text-dark">1</span></td>
+                                                                        <td>
+                                                                            <div class="fw-semibold">....... ........</div>
+                                                                            <small class="text-muted">.............</small>
+                                                                        </td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-end fw-semibold text-success">
+                                                                            Rs. 0,000
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span class="badge bg-warning text-dark">1</span></td>
+                                                                        <td>
+                                                                            <div class="fw-semibold">....... ........</div>
+                                                                            <small class="text-muted">.............</small>
+                                                                        </td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-end fw-semibold text-success">
+                                                                            Rs. 0,000
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span class="badge bg-warning text-dark">1</span></td>
+                                                                        <td>
+                                                                            <div class="fw-semibold">....... ........</div>
+                                                                            <small class="text-muted">.............</small>
+                                                                        </td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-end fw-semibold text-success">
+                                                                            Rs. 0,000
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="manage_users">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <!--User manage table start-->
+                                            <div class="">
+                                                <!-- Sort Start -->
+                                                <div class="col-12 mb-4">
+                                                    <div class="row align-items-center">
+                                                        <!-- Select (left) -->
+                                                        <div class="col-md-4 col-12">
+                                                            <div class="sort product-type">
+                                                                <label>Sort By Status :</label>
+                                                                <select id="orderSelect" onchange="sortUsers()">
+                                                                    <option value="0" selected>Select</option>
+                                                                    <option value="1">Name(A-Z)</option>
+                                                                    <option value="2">Name(Z-A)</option>
+                                                                    <option value="3">New Users</option>
+                                                                    <option value="4">Old Users</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Spacer (auto takes middle space) -->
+                                                        <div class="col-md-4 d-none d-md-block"></div>
+
+                                                        <!-- Search (right) -->
+                                                        <div class="col-md-4 col-12">
+                                                            <div class="input-box d-flex justify-content-end">
+                                                                <input class="single-input" placeholder="Search by username...." type="text" id="usersSearchField" style="height: 42px;">
+                                                                <button class="src-btn sb-2" onclick="sortUsers()">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Sort End -->
+
+                                                <!-- Table Start -->
+                                                <div class="cart-page-area">
+                                                    <form method="post" action="#">
+                                                        <div class="table-responsive">
+                                                            <table class="shop_table-2 cart table">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th class="">#</th>
+                                                                    <th class="item-price">Name</th>
+                                                                    <th class="">Email</th>
+                                                                    <th class="">Mobile</th>
+                                                                    <th class="">Since</th>
+                                                                    <th class="">Status</th>
+                                                                    <th class=""></th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody class="cart_item" id="adminUserManagementTableBody">
+                                                                    <tr>
+                                                                        <td colspan="6" class="text-center py-4 fs-1 fw-bold text-muted">
+                                                                            Order history is empty
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <!-- Table End -->
+
+                                                <!--pagination start-->
+                                                <div class="col-lg-12 mt-4">
+                                                    <div class="pagination-btn text-center">
+                                                        <ul class="page-numbers users" data-type="users">
+                                                            <li><a href="#" class="next page-numbers"><i
+                                                                    class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                                            <li><span class="page-numbers current">1</span></li>
+                                                            <li><a href="#" class="page-numbers">2</a></li>
+                                                            <li><a href="#" class="page-numbers">3</a></li>
+                                                            <li><a href="#" class="next page-numbers"><i
+                                                                    class="zmdi zmdi-long-arrow-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--pagination end-->
+                                            </div>
+                                            <!--User manage table start-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="add_product">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Category <em>*</em></label>
+                                                <select class="selectpicker select-custom" data-live-search="true" id="categorySelect" onchange="loadSubCategories()">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Sub Category <em>*</em></label>
+                                                <select class="selectpicker select-custom" data-live-search="true" id="subCategorySelect">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Brand <em>*</em></label>
+                                                <select class="selectpicker select-custom" data-live-search="true" id="brandSelect">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="input-box mb-20">
+                                                <label>Title <em>*</em></label>
+                                                <input type="text" id="title" class="info" placeholder="Title">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="input-box mb-20">
+                                                <label>Description <em>*</em></label>
+                                                <textarea class="info" id="description" rows="4"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr class="border border-2 border-dark mt-4 mb-4" >
+                                        </div>
+
+                                        <div class="col-12" >
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="input-box mb-20">
+                                                        <label>Color <em>*</em></label>
+                                                        <select class="selectpicker select-custom" data-live-search="true" id="colorSelect">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="input-box mb-20">
+                                                        <label>Size <em>*</em></label>
+                                                        <select class="selectpicker select-custom" data-live-search="true" id="sizeSelect">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-box mb-20">
+                                                        <label>Price <em>*</em></label>
+                                                        <input type="text" name="price" class="info" placeholder="0.00" id="price"
+                                                               oninput="validatePriceInput(this)">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-box mb-20">
+                                                        <label>Qty<em>*</em></label>
+                                                        <div class="col-12">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="cart-plus-minus d-flex align-items-center border rounded">
+                                                                    <div class="dec qtybutton">-</div>
+                                                                    <input type="text" value="1" name="qtybutton" class="cart-plus-minus-box  border-0" style="width: 110px;" id="qty" oninput="validatePriceInput(this)">
+                                                                    <div class="inc qtybutton">+</div>
+
+                                                                </div>
+                                                                <a class="btn-def btn2" href="javascript:void(0)" onclick="addStockToTable()">Add</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Table-->
+                                        <div class="col-12">
+                                            <div class="">
+                                                <!-- Table -->
+                                                <div class="">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body p-0">
+                                                            <table class="table table-hover mb-0 global-table" style="font-family: 'Montserrat', sans-serif; ">
+                                                                <thead class="table-light" >
+                                                                <tr class="global-row" >
+                                                                    <th class="global-cell">#</th>
+                                                                    <th class="global-cell">COLOR</th>
+                                                                    <th class="global-cell">SIZE</th>
+                                                                    <th class="global-cell">QTY</th>
+                                                                    <th class="global-cell">PRICE</th>
+                                                                    <th class="global-cell"></th>
+                                                                </tr>
+                                                                </thead>
+
+                                                                <tbody id="stockTableBody">
+<!--                                                                <tr class="global-row">-->
+<!--                                                                    <td class="global-cell">1</td>-->
+<!--                                                                    <td class="global-cell">Moose Shirt</td>-->
+<!--                                                                    <td class="global-cell">Black</td>-->
+<!--                                                                    <td class="global-cell">XL</td>-->
+<!--                                                                    <td class="global-cell">10</td>-->
+<!--                                                                    <td class="global-cell">Rs. 3000</td>-->
+<!--                                                                    <td class="global-cell remove-item">-->
+<!--                                                                        <a href="javaScript:void(0)"><i class="fa fa-trash-o"></i></a>-->
+<!--                                                                    </td>-->
+<!--                                                                </tr>-->
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Table -->
+                                            </div>
+                                        </div>
+                                        <!-- Table-->
+
+                                        <div class="col-12">
+                                            <hr class="border border-2 border-dark mt-4 mb-4" >
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Image 1</label>
+                                                <input class="form-control-color" type="file" accept="image/*" id="img1">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Image 2</label>
+                                                <input class="form-control-color" type="file" accept="image/*" id="img2">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Image 3</label>
+                                                <input class="form-control-color" type="file" accept="image/*" id="img3">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 text-end">
+                                            <a class="btn-def-danger btn2" href="javascript:void(0)" onclick="resetFields()">Clear</a>
+                                            <a class="btn-def btn2" href="javascript:void(0)" onclick="saveProductToDB()"  id="saveBtn">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="manage_product">
+                                    <!-- Sort Start -->
+                                    <div class="col-12 mb-4">
+                                        <div class="row align-items-center">
+                                            <!-- Select (left) -->
+                                            <div class="col-md-4 col-12">
+                                                <div class="sort product-type">
+                                                    <label>Sort By</label>
+                                                    <select id="adminProductsOrderSelect" onchange="sortAdminProducts()">
+                                                        <option value="5" selected>Default</option>
+                                                        <option value="2">Name (A - Z)</option>
+                                                        <option value="3">Name (Z - A)</option>
+                                                        <option value="4">Old Products</option>
+                                                        <option value="5">Latest Products</option>
+                                                        <option value="6">Price (Low &gt; High)</option>
+                                                        <option value="7">Price (High &gt; Low)</option>
+                                                        <option value="8">Low Stocks</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Spacer (auto takes middle space) -->
+                                            <div class="col-md-4 d-none d-md-block"></div>
+
+                                            <!-- Search (right) -->
+                                            <div class="col-md-4 col-12">
+                                                <div class="input-box d-flex justify-content-end">
+                                                    <input class="single-input" placeholder="Search by order id...." type="text" id="adminSearchField" style="height: 42px;">
+                                                    <button class="src-btn sb-2" onclick="sortAdminProducts()">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Sort End -->
+                                    <!-- Table Start -->
+                                    <div class="cart-page-area">
+                                        <form method="post" action="#">
+                                            <div class="table-responsive">
+                                                <table class="shop_table-2 cart table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="product-thumbnail ">Image</th>
+                                                            <th class="product-name">Product Name</th>
+                                                            <th class="prodcut-name">Details</th>
+                                                            <th class="">Stock</th>
+    <!--                                                        <th class="product-quantity">Satus</th>-->
+                                                            <th class="">Remove</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="cart_item" id="adminProductTableBody">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Table End -->
+
+                                    <!--pagination start-->
+                                    <div class="col-lg-12 mt-4">
+                                        <div class="pagination-btn text-center">
+                                            <ul class="page-numbers products" data-type="products">
+                                                <li><a href="#" class="next page-numbers"><i
+                                                        class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                                <li><span class="page-numbers current">1</span></li>
+                                                <li><a href="#" class="page-numbers">2</a></li>
+                                                <li><a href="#" class="page-numbers">3</a></li>
+                                                <li><a href="#" class="next page-numbers"><i
+                                                        class="zmdi zmdi-long-arrow-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--pagination end-->
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="manage_orders">
+                                    <div class="row">
+                                        <div class="col-12 mb-4">
+                                            <div class="row align-items-center">
+                                                <!-- Select (left) -->
+                                                <div class="col-md-4 col-12">
+                                                    <div class="sort product-type">
+                                                        <label>Sort By Status :</label>
+                                                        <select id="statusSelect" onchange="sortOrders()">
+                                                            <option value="0" selected>Select</option>
+                                                            <option value="2">PENDING</option>
+                                                            <option value="6">PACKING</option>
+                                                            <option value="5">DELIVERED</option>
+                                                            <option value="11">RECEIVED (To Review)</option>
+                                                            <option value="12">COMPLETED</option>
+                                                            <option value="9">CANCELED</option>
+                                                            <option value="8">REJECTED</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Spacer (auto takes middle space) -->
+                                                <div class="col-md-4 d-none d-md-block"></div>
+
+                                                <!-- Search (right) -->
+                                                <div class="col-md-4 col-12">
+                                                    <div class="input-box d-flex justify-content-end">
+                                                        <input class="single-input" placeholder="Search by order id...." type="text" id="ordersSearchField" style="height: 42px;">
+                                                        <button class="src-btn sb-2" onclick="sortOrders()">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Table Start -->
+                                        <div class="cart-page-area">
+                                            <form method="post" action="#">
+                                                <div class="table-responsive">
+                                                    <table class="shop_table-2 cart table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th class="">Order Id</th>
+                                                            <th class="item-price">Total</th>
+                                                            <th class="">Date</th>
+                                                            <th class="">Payment Type</th>
+                                                            <th class="">Status</th>
+                                                            <th class=""></th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="cart_item" id="adminOrderTableBody">
+                                                            <tr>
+                                                                <td colspan="6" class="text-center py-4 fs-1 fw-bold text-muted">
+                                                                    Order history is empty
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Table End -->
+
+                                        <!--pagination start-->
+                                        <div class="col-lg-12 mt-4">
+                                            <div class="pagination-btn text-center">
+                                                <ul class="page-numbers orders" data-type="orders">
+                                                    <li><a href="#" class="next page-numbers"><i
+                                                            class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                                    <li><span class="page-numbers current">1</span></li>
+                                                    <li><a href="#" class="page-numbers">2</a></li>
+                                                    <li><a href="#" class="page-numbers">3</a></li>
+                                                    <li><a href="#" class="next page-numbers"><i
+                                                            class="zmdi zmdi-long-arrow-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--pagination end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--service idea area are end -->
+
+        <!-- UPDATE STOCK MODAL -->
+        <div id="quickview-wrapper">
+            <!-- Modal -->
+            <div class="productModal modal fade" id="stockModal" tabindex="-2" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12" >
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="input-box mb-20">
+                                                <label>Color <em>*</em></label>
+                                                <select class="selectpicker select-custom" data-live-search="true" id="colorSelect2">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="input-box mb-20">
+                                                <label>Size <em>*</em></label>
+                                                <select class="selectpicker select-custom" data-live-search="true" id="sizeSelect2">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-box mb-20">
+                                                <label>Price <em>*</em></label>
+                                                <input type="text" name="price" class="info" placeholder="0.00" id="price2"
+                                                       oninput="validatePriceInput(this)">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="input-box mb-20">
+                                                <label>Qty<em>*</em></label>
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="cart-plus-minus d-flex align-items-center border rounded">
+                                                            <div class="dec qtybutton">-</div>
+                                                            <input type="text" value="1" name="qtybutton" class="cart-plus-minus-box  border-0" style="width: 110px;" id="qty2" oninput="validatePriceInput(this)">
+                                                            <div class="inc qtybutton">+</div>
+
+                                                        </div>
+                                                        <a class="btn-def btn2" href="javascript:void(0)" onclick="addStockToTable()">Add</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Table-->
+                                <div class="col-12">
+                                    <div class="">
+                                        <!-- Table -->
+                                        <div class="col-12">
+                                            <div class="row shadow-sm">
+                                                <div class="p-2" style="max-height: 400px;overflow-y: auto;display: block;">
+                                                    <table class="table table-hover mb-0 global-table" style="font-family: 'Montserrat', sans-serif;width: 100%;border-collapse: collapse;">
+                                                        <thead class="table-light" style="position: sticky; top: 0;background: #fff;z-index: 2;">
+                                                        <tr class="global-row" >
+                                                            <th class="global-cell">#</th>
+                                                            <th class="global-cell">COLOR</th>
+                                                            <th class="global-cell">SIZE</th>
+                                                            <th class="global-cell">QTY</th>
+                                                            <th class="global-cell">PRICE</th>
+                                                            <th class="global-cell">OFFERS</th>
+                                                            <th class="global-cell">STATUS</th>
+                                                            <th class="global-cell"></th>
+                                                        </tr>
+                                                        </thead>
+
+                                                        <tbody id="AdminStockTableBody">
+                                                        <tr class="global-row">
+                                                            <td class="global-cell">1</td>
+                                                            <td class="global-cell">Black</td>
+                                                            <td class="global-cell">XL</td>
+                                                            <td class="global-cell">10</td>
+                                                            <td class="global-cell">Rs. 3000</td>
+                                                            <td class="global-cell">
+                                                                <select class="selectpicker select-custom" data-live-search="true" id="">
+                                                                    <option>DEFAULT</option>
+                                                                    <option>Sale 1000.00 OFF</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="global-cell">
+                                                                <select class="selectpicker select-custom" data-live-search="true" id="">
+                                                                    <option>ACTIVE</option>
+                                                                    <option>INACTIVE</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="global-cell remove-item">
+                                                                <a href="javaScript:void(0)"><i class="fa fa-trash-o"></i></a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Table -->
+                                    </div>
+                                </div>
+                                <!-- Table-->
+                            </div>
+                        </div>
+                        <!-- .modal-body -->
+                    </div>
+                    <!-- .modal-content -->
+                </div>
+                <!-- .modal-dialog -->
+            </div>
+            <!-- END Modal -->
+        </div>
+        <!-- UPDATE STOCK MODAL -->
+
+        <!-- UPDATE ORDER ITEMS MODAL -->
+        <div id="quickview-wrapper2">
+            <!-- Modal -->
+            <div class="productModal modal fade" id="orderItemsModal" tabindex="-2" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Table-->
+                                <div class="col-12">
+                                    <div class="row">
+
+                                        <div class="col-12" id="orderDetailsModal">
+                                            <div class="row">
+                                                <div class="col-md-6 col-12" style="height: 120px">
+                                                    <div class="row">
+                                                        <span class="fw-bold fs-6">Address : </span>
+                                                        <span>............</span>
+                                                    </div>
+                                                    <div class="col-12 d-flex flex-column">
+                                                        <span class="fw-bold fs-6">............</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1  d-lg-flex d-none justify-content-center" style="height: 100px">
+                                                    <div class="vr"></div>
+                                                </div>
+                                                <div class="col-md-4 col-12 d-flex flex-column" style="height: 120px">
+                                                    <span class="fw-bold fs-6">Name : <span class="fw-normal">............</span></span>
+                                                    <span class="fw-bold fs-6">Email : <span class="fw-normal">............</span></span>
+                                                    <span class="fw-bold fs-6">Mobile : <span class="fw-normal">............</span></span>
+                                                    <span class="fw-bold fs-6">Delivery Cost : <span class="fw-normal">............</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Table -->
+                                        <div class="col-12">
+                                            <div class="row shadow-sm">
+                                                <div class="p-2" style="max-height: 600px;overflow-y: auto;display: block;">
+                                                    <div class="cart-page-area">
+                                                        <div class="table-responsive">
+                                                            <table class="shop_table-2 cart table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="product-thumbnail ">Image</th>
+                                                                        <th class="">Product Name</th>
+                                                                        <th class="">Type</th>
+                                                                        <th class="item-price">Price</th>
+                                                                        <th class="">Qty</th>
+                                                                        <th class=""></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="cart_item" id="adminOrderItemTableBody">
+                                                                    <tr>
+                                                                        <td colspan="6" class="text-center py-4 fs-1 fw-bold text-muted">
+                                                                            Order items not available
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Table -->
+                                    </div>
+                                </div>
+                                <!-- Table-->
+                            </div>
+                        </div>
+                        <!-- .modal-body -->
+                    </div>
+                    <!-- .modal-content -->
+                </div>
+                <!-- .modal-dialog -->
+            </div>
+            <!-- END Modal -->
+        </div>
+        <!-- UPDATE ORDER ITEMS MODAL -->
+
+        <!-- UPDATE ORDER ITEMS MODAL -->
+        <div id="quickview-wrapper3">
+            <!-- Modal -->
+            <div class="productModal modal fade" id="userAddressesModal" tabindex="-2" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Table-->
+                                <div class="col-12 mt-4" style="height: 20px;">
+                                    <div class="row  d-flex flex-column align-items-center">
+                                        <hr class="border border-1 border-dark">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row" id="addressDetailsModal">
+
+                                    </div>
+                                </div>
+                                <!-- Table-->
+                            </div>
+                        </div>
+                        <!-- .modal-body -->
+                    </div>
+                    <!-- .modal-content -->
+                </div>
+                <!-- .modal-dialog -->
+            </div>
+            <!-- END Modal -->
+        </div>
+        <!-- UPDATE ORDER ITEMS MODAL -->
+
+
+        <footer>
+            <footer-content></footer-content>
+        </footer>
+
+    </div>
+    <!-- Body main wrapper end -->
+
+    <!-- Bootstrap framework js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <script src="assets/js/notifix-Init.js"></script>
+    <script src="assets/js/webjs/header.js"></script>
+    <script src="assets/js/webjs/footer.js"></script>
+    <script src="assets/js/notiflix-aio-3.2.8.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/webjs/admin-account.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Slider js -->
+    <script src="assets/js/slider/jquery.nivo.slider.pack.js"></script>
+    <script src="assets/js/slider/nivo-active.js"></script>
+    <!-- counterUp-->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

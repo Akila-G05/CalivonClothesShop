@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//HibernateTest/HibernateTest Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+      <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+      <property name="hibernate.connection.url">
+          jdbc:mysql://localhost:3306/calivon?useSSL=false&amp;allowPublicKeyRetrieval=true
+      </property>
+      <property name="hibernate.connection.username">root</property>
+      <property name="hibernate.connection.password">akila@2005</property>
+      <property name="hibernate.hbm2ddl.auto">update</property>
+      <property name="hibernate.show_sql">false</property>
+
+      <mapping class="lk.jiat.calivon.entity.Admin" />
+      <mapping class="lk.jiat.calivon.entity.Province" />
+      <mapping class="lk.jiat.calivon.entity.District" />
+      <mapping class="lk.jiat.calivon.entity.City" />
+      <mapping class="lk.jiat.calivon.entity.Address" />
+      <mapping class="lk.jiat.calivon.entity.Status" />
+      <mapping class="lk.jiat.calivon.entity.User" />
+      <mapping class="lk.jiat.calivon.entity.Color" />
+      <mapping class="lk.jiat.calivon.entity.Size" />
+      <mapping class="lk.jiat.calivon.entity.Category" />
+      <mapping class="lk.jiat.calivon.entity.SubCategory" />
+      <mapping class="lk.jiat.calivon.entity.Brand" />
+      <mapping class="lk.jiat.calivon.entity.Product" />
+      <mapping class="lk.jiat.calivon.entity.Discount" />
+      <mapping class="lk.jiat.calivon.entity.Stock" />
+      <mapping class="lk.jiat.calivon.entity.Cart" />
+      <mapping class="lk.jiat.calivon.entity.Wishlist" />
+      <mapping class="lk.jiat.calivon.entity.DeliveryTypes" />
+      <mapping class="lk.jiat.calivon.entity.Orders" />
+      <mapping class="lk.jiat.calivon.entity.OrderItems" />
+      <mapping class="lk.jiat.calivon.entity.OrderDetails" />
+  </session-factory>
+</hibernate-configuration>
