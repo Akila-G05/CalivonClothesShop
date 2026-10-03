@@ -27,15 +27,15 @@ CREATE TABLE IF NOT EXISTS `address` (
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf32 COLLATE=utf32_bin;
 
 INSERT INTO `address` (`id`, `line_one`, `line_two`, `mobile`, `postal_code`, `city_id`, `user_id`, `is_primary`) VALUES
-	(19, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', '70017', 1, 3, b'1'),
-	(20, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', '70017', 7, 1, b'0'),
-	(22, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', '70017', 2, 1, b'1'),
-	(25, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', '70017', 2, 5, b'1'),
-	(31, 'R.M.P.C Rathnayaka  Rural, Developmen', '', '0764012265', '12312', 2, 16, b'1'),
-	(32, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', '70017', 5, 18, b'1'),
+	(19, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', '70017', 1, 3, b'1'),
+	(20, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', '70017', 7, 1, b'0'),
+	(22, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', '70017', 2, 1, b'1'),
+	(25, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', '70017', 2, 5, b'1'),
+	(31, 'R.M.P.C Rathnayaka  Rural, Developmen', '', '0710000000', '12312', 2, 16, b'1'),
+	(32, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', '70017', 5, 18, b'1'),
 	(33, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', '12323', 3, 17, b'1'),
 	(34, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', '12323', 3, 22, b'1'),
-	(35, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', '70017', 3, 23, b'1');
+	(35, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', '70017', 3, 23, b'1');
 
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf32 COLLATE=utf32_bin;
 
 INSERT INTO `admin` (`id`, `email`, `first_name`, `last_name`, `password`) VALUES
-	(1, 'akila@gmail.com', 'Akila', 'Gimhana', 'Akila@2005');
+	(1, 'akila@gmail.com', 'Akila', 'Gimhana', 'Usera@0000');
 
 CREATE TABLE IF NOT EXISTS `brand` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -316,27 +316,27 @@ CREATE TABLE IF NOT EXISTS `order_details` (
 ) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf32 COLLATE=utf32_bin;
 
 INSERT INTO `order_details` (`id`, `line_one`, `line_two`, `mobile`, `name`, `postal_code`, `city_id`, `orders_id`) VALUES
-	(1, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Oshan  Saminda', '70017', 2, 41),
-	(2, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Oshan Saminda', '70017', 2, 43),
-	(3, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Oshan Saminda', '70017', 2, 44),
-	(4, 'R.M.P.C Rathnayaka  Rural, Developmen', '', '0764012265', 'Chamal Rajapaksha', '12312', 8, 45),
-	(5, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Sahan Ranawaka', '70017', 2, 46),
-	(6, 'R.M.P.C Rathnayaka  Rural, Developmen', '', '0764012265', 'Chamal Rajapaksha', '12312', 2, 47),
-	(7, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Meraj Lakvindu', '70017', 1, 48),
-	(8, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Meraj Lakvindu', '70017', 1, 49),
-	(9, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Meraj Lakvindu', '70017', 1, 50),
-	(10, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Sahan Ranawaka', '70017', 2, 51),
-	(11, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Sahan Ranawaka', '70017', 2, 52),
-	(12, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Sahan Ranawaka', '70017', 2, 53),
-	(13, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Sahan Ranawaka', '70017', 2, 54),
-	(14, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Maleesha Dasanayaka', '70017', 5, 55),
-	(15, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Maleesha Dasanayaka', '70017', 5, 56),
-	(16, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Maleesha Dasanayaka', '70017', 5, 57),
-	(17, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Maleesha Dasanayaka', '70017', 5, 58),
+	(1, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Oshan  Saminda', '70017', 2, 41),
+	(2, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Oshan Saminda', '70017', 2, 43),
+	(3, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Oshan Saminda', '70017', 2, 44),
+	(4, 'R.M.P.C Rathnayaka  Rural, Developmen', '', '0710000000', 'Chamal Rajapaksha', '12312', 8, 45),
+	(5, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Sahan Ranawaka', '70017', 2, 46),
+	(6, 'R.M.P.C Rathnayaka  Rural, Developmen', '', '0710000000', 'Chamal Rajapaksha', '12312', 2, 47),
+	(7, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Meraj Lakvindu', '70017', 1, 48),
+	(8, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Meraj Lakvindu', '70017', 1, 49),
+	(9, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Meraj Lakvindu', '70017', 1, 50),
+	(10, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Sahan Ranawaka', '70017', 2, 51),
+	(11, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Sahan Ranawaka', '70017', 2, 52),
+	(12, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Sahan Ranawaka', '70017', 2, 53),
+	(13, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Sahan Ranawaka', '70017', 2, 54),
+	(14, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Maleesha Dasanayaka', '70017', 5, 55),
+	(15, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Maleesha Dasanayaka', '70017', 5, 56),
+	(16, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Maleesha Dasanayaka', '70017', 5, 57),
+	(17, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Maleesha Dasanayaka', '70017', 5, 58),
 	(18, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Sheron Randewa', '12323', 3, 59),
 	(19, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Sheron Randewa', '12323', 3, 60),
 	(20, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 61),
-	(21, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Tharun Rathnayaka', '70017', 3, 70),
+	(21, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Tharun Rathnayaka', '70017', 3, 70),
 	(22, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 76),
 	(23, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 77),
 	(24, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 79),
@@ -359,7 +359,7 @@ INSERT INTO `order_details` (`id`, `line_one`, `line_two`, `mobile`, `name`, `po
 	(41, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 96),
 	(42, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 97),
 	(43, 'Karawita Road, Palawela, Udaniriella', '', '0712354661', 'Migara Lakshan', '12323', 3, 98),
-	(44, 'Karawita Road, Palawela, Rathnapura', '', '0764012265', 'Sahan Ranawaka', '70017', 2, 99);
+	(44, 'Karawita Road, Palawela, Rathnapura', '', '0710000000', 'Sahan Ranawaka', '70017', 2, 99);
 
 CREATE TABLE IF NOT EXISTS `order_items` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -718,18 +718,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf32 COLLATE=utf32_bin;
 
 INSERT INTO `users` (`id`, `created_at`, `updated_at`, `email`, `first_name`, `last_name`, `password`, `verification_code`, `status_id`) VALUES
-	(1, '2025-11-23 23:46:27', '2025-11-27 19:40:51.232994', 'sahan@gmail.com', 'Sahan', 'Ranawaka', 'Sahan@2005', '123456', 10),
-	(3, '2025-11-25 17:49:48', '2025-11-25 18:03:19.175674', 'meraj@gmail.com', 'Meraj', 'Lakvindu', 'Meraj@2005', '', 10),
-	(4, '2025-11-25 18:08:23', '2025-11-25 18:08:23.271920', 'kavishka@gmail.com', 'Kavishka', 'Devinda', 'Kavishka@2005', '920483', 2),
-	(5, '2025-12-15 20:19:33', '2025-12-15 20:23:10.347406', 'oshan@gmail.com', 'Oshan', 'Saminda', 'Oshan@2005', '', 10),
-	(16, '2025-12-17 22:10:16', '2025-12-27 22:03:30.946835', 'chamal@gmail.com', 'Chamal', 'Rajapaksha', 'Chamal@2005', '427348', 13),
-	(17, '2025-12-23 18:27:20', '2025-12-31 21:07:05.662320', 'sheron@gmail.com', 'Sheron', 'Randewa', 'Sheron@2005', '', 10),
-	(18, '2025-12-31 21:06:16', '2025-12-31 21:06:53.539201', 'maleesha@gmail.com', 'Maleesha', 'Dasanayaka', 'Maleesha@2005', '580253', 10),
-	(19, '2026-01-03 22:01:33', '2026-01-03 22:01:32.705286', 'gayan@gmail.com', 'Gayan', 'Gunaruwan', 'Gayan@2005', '824465', 2),
-	(20, '2026-01-03 22:01:58', '2026-01-04 15:48:55.682054', 'sanithu@gmail.com', 'Sanithu', 'Rathnayaka', 'Sanithu@2005', '854723', 10),
-	(21, '2026-01-03 22:02:20', '2026-01-03 22:02:19.671452', 'supun@gmail.com', 'Supun', 'Chanaka', 'Supun@2005', '101826', 2),
-	(22, '2026-01-03 22:03:29', '2026-01-04 15:48:53.335996', 'migara@gmail.com', 'Migara', 'Lakshan', 'Migara@2005', '113323', 10),
-	(23, '2026-01-11 23:16:40', '2026-01-11 23:16:40.408773', 'tharun@gmail.com', 'Tharun', 'Rathnayaka', 'Guest@408453', '408453', 13);
+	(1, '2025-11-23 23:46:27', '2025-11-27 19:40:51.232994', 'sahan@gmail.com', 'Sahan', 'Ranawaka', 'User@0000', '123456', 10),
+	(3, '2025-11-25 17:49:48', '2025-11-25 18:03:19.175674', 'meraj@gmail.com', 'Meraj', 'Lakvindu', 'User@0005', '', 10),
+	(4, '2025-11-25 18:08:23', '2025-11-25 18:08:23.271920', 'kavishka@gmail.com', 'Kavishka', 'Devinda', 'User@0000', '920483', 2),
+	(5, '2025-12-15 20:19:33', '2025-12-15 20:23:10.347406', 'oshan@gmail.com', 'Oshan', 'Saminda', 'User@0000', '', 10),
+	(16, '2025-12-17 22:10:16', '2025-12-27 22:03:30.946835', 'chamal@gmail.com', 'Chamal', 'Rajapaksha', 'User@0000', '427348', 13),
+	(17, '2025-12-23 18:27:20', '2025-12-31 21:07:05.662320', 'sheron@gmail.com', 'Sheron', 'Randewa', 'User@0000', '', 10),
+	(18, '2025-12-31 21:06:16', '2025-12-31 21:06:53.539201', 'maleesha@gmail.com', 'Maleesha', 'Dasanayaka', 'User@0000', '580253', 10),
+	(19, '2026-01-03 22:01:33', '2026-01-03 22:01:32.705286', 'gayan@gmail.com', 'Gayan', 'Gunaruwan', 'User@0000', '824465', 2),
+	(20, '2026-01-03 22:01:58', '2026-01-04 15:48:55.682054', 'sanithu@gmail.com', 'Sanithu', 'Rathnayaka', 'User@0000', '854723', 10),
+	(21, '2026-01-03 22:02:20', '2026-01-03 22:02:19.671452', 'supun@gmail.com', 'Supun', 'Chanaka', 'User@0000', '101826', 2),
+	(22, '2026-01-03 22:03:29', '2026-01-04 15:48:53.335996', 'migara@gmail.com', 'Migara', 'Lakshan', 'User@0000', '113323', 10),
+	(23, '2026-01-11 23:16:40', '2026-01-11 23:16:40.408773', 'tharun@gmail.com', 'Tharun', 'Rathnayaka', 'User@408453', '408453', 13);
 
 CREATE TABLE IF NOT EXISTS `wishlist` (
   `id` int NOT NULL AUTO_INCREMENT,
